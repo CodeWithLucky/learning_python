@@ -33,3 +33,12 @@ print(mydict)
 
 print(mydict.keys())
 print(list_of_set)
+
+
+yourDict={
+    "name" : "Rahul",
+    "age" : 27,
+    "address" : "Banepa",
+    "Education" : "12th fail",
+    "Training" : "Python django"
+} 
