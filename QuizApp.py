@@ -10,6 +10,7 @@ quiz_questions = {
 # questions = quiz_questions.keys()
 # print(questions)
 
+score = 0
 
 
 for i in range(len(quiz_questions)):
@@ -18,7 +19,11 @@ for i in range(len(quiz_questions)):
     userInput = input("Enter answer  ")
     if userInput == list(quiz_questions.values())[i]:
         print("Your answer is correct")
+        score = score + 1
     else:
         print("Your answer is not correct")
 
+print("Your score is " , score)
     
+
+
