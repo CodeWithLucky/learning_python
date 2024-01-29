@@ -8,7 +8,7 @@ userScore = 0
 compScore = 0
 draw = 0
 for i in range(3):
-    userChoice = input("Enter your choice ")
+    userChoice = input("Enter your choice : scissor  paper  rock ").lower()
     computerChoices = random.choice(choices)
 
     if userChoice == computerChoices:
