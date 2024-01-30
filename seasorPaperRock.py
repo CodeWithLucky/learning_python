@@ -29,6 +29,6 @@ elif userScore == compScore:
     print("Game draw")
 
 
-print("Your score : " , userScore)
-print("Computer Score : " , compScore)
-print("Draw " , draw)
+print(f"Your score : {userScore}" )
+print(f"Computer Score : {compScore}" )
+print(f"Draw:  {draw}" )
