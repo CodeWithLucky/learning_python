@@ -8,25 +8,17 @@ userScore = 0
 compScore = 0
 draw = 0
 for i in range(3):
-    userChoice = input("Enter your choice ")
+    userChoice = input("Enter your choice : scissor  paper  rock ").lower()
     computerChoices = random.choice(choices)
+
 
     if userChoice == computerChoices:
         draw = draw + 1
-    elif userChoice == 'scissor' and computerChoices == 'paper':
-        userScore = userScore + 1
-    elif userChoice == 'paper' and computerChoices == 'scissor':
-        compScore = compScore + 1
-    elif userChoice == 'rock' and computerChoices == 'paper':
-        compScore = compScore + 1
-    elif userChoice == 'scissor' and computerChoices == 'rock':
-        compScore = compScore + 1
-    elif userChoice == 'paper' and computerChoices == 'rock':
-        userScore = userScore + 1
-    elif userChoice == 'rock' and computerChoices == 'scissor':
+    elif (userChoice == 'scissor' and computerChoices == 'paper') or (userChoice == 'paper' and computerChoices == 'rock') or (userChoice == 'rock' and computerChoices == 'scissor'):
         userScore = userScore + 1
     else:
-        print("ERROR")
+        compScore = compScore + 1
+
 
 
 if userScore > compScore:
