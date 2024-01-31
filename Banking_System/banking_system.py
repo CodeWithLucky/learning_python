@@ -73,6 +73,35 @@ def withdraw(user):
 def check_balance(user):
     users = read_data
     print(f"Your current balance is: {users[user]['balance']}")
+    
+
+def edit_profile(user):
+
+    while True:
+        users = read_data()
+
+        print("What you want to edit:\n 1.Username\n 2.Password\n 3.Balance")
+        edit_options = int(input())
+        if edit_options == 1:
+            new_username = input("Enter new username:\n")
+            users[user] = new_username
+            write_data(users)
+            print("Your username is successfully updated...")
+            break
+        elif edit_options == 2:
+            new_password = input("Enter new password:\n")
+            users[user]['password'] = new_password
+            write_data(users)
+            print("Your password is successfully updated...")
+            break
+        elif edit_options == 3:
+            new_balance = int(input("Enter new balance: \n"))
+            users[user]['balance'] = new_balance
+            write_data(users)
+            print("Your balance is successfully updated...")
+            break
+        else:
+            print("Invalid update request code..")
 
 
 def main():
@@ -93,17 +122,24 @@ def main():
         if user:
             while True:
                 print("What you want to do")
-                print("\n 1.Deposite\n 2.Withdraw\n 3.Check Balance\n 4.Logout")
+                print("\n 1.Deposite\n 2.Withdraw\n 3.Check Balance\n 4.Edit Profile\n 5.Logout")
                 make_choice = int(input())
 
                 if(make_choice == 1):
                     deposite(user)
+                    break
                 elif(make_choice == 2):
                     withdraw(user)
+                    break
                 elif make_choice == 3:
                     check_balance(user)
-                elif make_choice == 4:
                     break
+                elif make_choice == 4:
+                    edit_profile(user)
+                    break
+                elif make_choice == 5:
+                    break
+
 
     elif user_choice == 3:
         print("Are you sure you want to exit ? ")
