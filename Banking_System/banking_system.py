@@ -86,7 +86,7 @@ while True:
             edit_options = int(input())
             if edit_options == 1:
                 new_username = input("Enter new username:\n")
-                users[user] = new_username
+                users[new_username] = users.pop(user)
                 write_data(users)
                 print("Your username is successfully updated...")
                 break

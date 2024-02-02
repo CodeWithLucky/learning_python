@@ -71,7 +71,7 @@ while True:
         if update_option == 1:
             print("Enter new username: ")
             new_username = input()
-            users[user] = new_username
+            users[new_username] = users.pop(user)
             write_data(users)
         elif update_option == 2:
             print("Enter new password: ")
@@ -88,7 +88,7 @@ while True:
     def main():
         print("__WELCOME TO BANK OF ITB__")
         print("What you want to do:")
-        print("\n 1.Create Account\n 2.Access Account\n 3.Exit")
+        print("\n 1.Create Account\n 2.Access Account")
 
         first_choice = int(input())
 

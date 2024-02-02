@@ -1,12 +1,4 @@
 {
-    "laxman": {
-        "password": "khopasi",
-        "balance": 48900.0
-    },
-    "nishan": {
-        "password": "sunthan123",
-        "balance": 0.0
-    },
     "pemba": {
         "password": "Dhulikhel",
         "balance": 0.0
@@ -18,5 +10,13 @@
     "madhu": {
         "password": "rabi123",
         "balance": 0.0
+    },
+    "Nishu": {
+        "password": "nishan123",
+        "balance": 0.0
+    },
+    "abc": {
+        "password": "123",
+        "balance": 34567.0
     }
 }

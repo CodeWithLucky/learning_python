@@ -1,8 +1,4 @@
 {
-    "laxman": {
-        "password": "password123",
-        "balance": 67049.0
-    },
     "nishan": {
         "password": "sunthan",
         "balance": 0.0
@@ -18,5 +14,9 @@
     "madhu": {
         "password": "rabi123",
         "balance": 0.0
+    },
+    "lucky": {
+        "password": "password123",
+        "balance": 67049.0
     }
 }
