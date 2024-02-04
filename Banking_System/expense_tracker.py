@@ -1,6 +1,6 @@
 import os
 import json
-
+from datetime import datetime
 database = "store_expenses.json"
 
 def read_data():
@@ -8,3 +8,6 @@ def read_data():
         return {}
     with json.open(database, 'r') as file:
         return json.load(file)
+    
+
+print(datetime.date)
